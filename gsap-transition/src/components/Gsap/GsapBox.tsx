@@ -20,7 +20,7 @@ const GsapBox = () => {
             yoyo: true,
         })
 
-    }, [])
+    }, { scope: 'container' })
 
     const handleClick = () => {
         animationRef.current?.restart();

@@ -1,12 +1,22 @@
-import FramerDiv from '@/components/Framer/FramerDiv'
+import FramerBoxAnimation from '@/components/Framer/FramerBoxAnimation'
+import BaseHeading from '@/components/_Base/BaseHeading'
+import BaseWrapper from '@/components/_Base/BaseWrapper'
 import React from 'react'
 
 
 const FramerPage = () => {
     return (
-        <div className='w-full'>
-            FramerPage
-        </div>
+        <BaseWrapper>
+            <div className='min-w-[500px]'>
+                <BaseHeading>
+                    FramerPage
+                </BaseHeading>
+                <div>
+                    Amination example
+                    <FramerBoxAnimation />
+                </div>
+            </div>
+        </BaseWrapper>
     )
 }
 

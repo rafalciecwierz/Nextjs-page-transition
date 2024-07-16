@@ -1,9 +1,10 @@
 import Content from "@/components/Content/Content";
+import BaseWrapper from "@/components/_Base/BaseWrapper";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <BaseWrapper>
       <Content title="Main component" />
-    </main>
+    </BaseWrapper>
   );
 }

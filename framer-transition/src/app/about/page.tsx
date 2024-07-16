@@ -7,9 +7,7 @@ import React from 'react'
 const AboutPage = () => {
     return (
         <BaseWrapper>
-            <FramerDiv>
-                <Content title="About Page Transition" withoutImage />
-            </FramerDiv>
+            <Content title="About Page Transition" withoutImage />
         </BaseWrapper>
     )
 }

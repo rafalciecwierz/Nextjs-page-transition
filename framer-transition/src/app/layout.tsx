@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
-import FramerDiv from "@/components/Framer/FramerDiv";
-import { AnimatePresence } from "framer-motion";
+import PageTransitionEffect from "@/components/Framer/PageTransitionEffect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <PageTransitionEffect>
+          {children}
+        </PageTransitionEffect>
       </body>
     </html>
   );
